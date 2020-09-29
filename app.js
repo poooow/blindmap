@@ -38,6 +38,16 @@ app.get('/map/europe.php', function (req, res) {
     });
 });
 
+app.get('/', function (req, res) {
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Some of the services are outdated and no longer maintained :(\npoooow@gmail.com');
+});
+
+app.get('/map', function (req, res) {
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Some of the services are outdated and no longer maintained :(\npoooow@gmail.com');
+});
+
 function makeCss(countries, highlightedcolor, defaultcolor) {
 
     let countriesCss = `path { fill: #${defaultcolor}}\n`
